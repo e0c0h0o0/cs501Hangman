@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Panel 3 for Main Game Play Screen -->
+    <FrameLayout
+        android:id="@+id/panel_game"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <!-- Add your hangman and word display views here -->
+    </FrameLayout>
+
+    <!-- Panel 1 for Choose the letter buttons -->
+
+
+
+    <!-- Panel 2 for Hint button -->
+    <!-- 提示信息的 TextView -->
+    <TextView
+        android:id="@+id/textview_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp" />
+    <!-- 提示按钮 -->
+    <Button
+        android:id="@+id/button_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hint"/>
+    <GridLayout
+        android:id="@+id/panel_letters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:columnCount="4"
+        android:rowCount="7"
+        android:orientation="horizontal">
+        <!-- Row 1 -->
+        <Button android:id="@+id/button_a" android:text="A" />
+        <Button android:id="@+id/button_b" android:text="B" />
+        <Button android:id="@+id/button_c" android:text="C" />
+        <Button android:id="@+id/button_d" android:text="D" />
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/button_e" android:text="E" />
+        <Button android:id="@+id/button_f" android:text="F" />
+        <Button android:id="@+id/button_g" android:text="G" />
+        <Button android:id="@+id/button_h" android:text="H" />
+        <!-- Row 3 -->
+        <Button android:id="@+id/button_i" android:text="I" />
+        <Button android:id="@+id/button_j" android:text="J" />
+        <Button android:id="@+id/button_k" android:text="K" />
+        <Button android:id="@+id/button_l" android:text="L" />
+        <!-- Row 4 -->
+        <Button android:id="@+id/button_m" android:text="M" />
+        <Button android:id="@+id/button_n" android:text="N" />
+        <Button android:id="@+id/button_o" android:text="O" />
+        <Button android:id="@+id/button_p" android:text="P" />
+        <!-- Row 5 -->
+        <Button android:id="@+id/button_q" android:text="Q" />
+        <Button android:id="@+id/button_r" android:text="R" />
+        <Button android:id="@+id/button_s" android:text="S" />
+        <Button android:id="@+id/button_t" android:text="T" />
+        <!-- Row 6 -->
+        <Button android:id="@+id/button_u" android:text="U" />
+        <Button android:id="@+id/button_v" android:text="V" />
+        <Button android:id="@+id/button_w" android:text="W" />
+        <Button android:id="@+id/button_x" android:text="X" />
+        <!-- Row 7 -->
+        <Button android:id="@+id/button_y" android:text="Y" />
+        <Button android:id="@+id/button_z" android:text="Z" />
+    </GridLayout>
+
+
+
+    <!-- New Game Button -->
+    <Button
+        android:id="@+id/button_new_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Game"/>
+
+</LinearLayout>
